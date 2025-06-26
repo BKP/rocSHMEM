@@ -91,7 +91,6 @@ set(ROCMCHECKS_WARN_TOOLCHAIN_VAR OFF)
 include(cmake/rocm_local_targets.cmake)
 
 set(DEFAULT_GPUS
-      gfx90a
       gfx942)
 
 ###############################################################################
