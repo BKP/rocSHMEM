@@ -294,7 +294,7 @@ class QueuePair {
   uint64_t* fetching_atomic{nullptr};
   uint32_t fetching_atomic_lkey{0};
 
-  static const uint32_t FETCHING_ATOMIC_CNT{1024};
+  static const uint32_t FETCHING_ATOMIC_CNT{2097152};
   static_assert(FETCHING_ATOMIC_CNT % __AMDGCN_WAVEFRONT_SIZE == 0);
   using FreeListT = FreeList<uint64_t*, HIPAllocator>;
   FreeListT* fetching_atomic_freelist{nullptr};
